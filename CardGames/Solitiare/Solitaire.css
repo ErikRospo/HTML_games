@@ -25,7 +25,14 @@ body {
     border-radius: 0.5rem;
     color: white;
 }
-
+.card-slot{
+    height:100%;
+    width:100%;
+}
+.main-slot{
+    height: 7em;
+    width:2em;
+}
 .text {
     grid-column: span 2;
     display: flex;
