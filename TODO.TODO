@@ -1,0 +1,32 @@
+- games
+    - card games
+        - Solitare
+        - Blackjack
+            - Will be a simplified version
+        - Higher/Lower
+        - Garbage
+            - Flip any card
+            - Flip the Nth card, where N is the cards rank
+                - faces are wildcards
+    - dice games
+        - Yahtzee
+- features
+    - Different deck types
+        - Joker
+        - No Joker
+        - A-10
+        - 2-10
+        - ETC...
+- Visuals
+    - Better styling
+    - cleaner elements
+    - Add drop shadows, Borders, and more.
+    - base on a central theme file.
+    - possibly switch to Tailwind for themes.
+- Backend
+    - Have &dev=true url argument
+        - enables developent options.
+    - Have &verbose=true url argument
+        - allows for dumping of console logs.
+- Finale
+    - Add all created games to a central page
