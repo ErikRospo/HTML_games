@@ -1,8 +1,12 @@
-const SUITS = ["♠", "♦", "♥", "♣"]
-const VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
 class Deck {
     constructor(cards = FreshDeck()) {
+    if (cards=="NoDeck"){
+        this.cards=[]
+    }else{
         this.cards = cards;
+    }
+
     }
     get numberOfCards() {
         return this.cards.length - 1;
@@ -28,7 +32,7 @@ class Card {
         this.value = value;
     }
     get color() {
-        return this.suit === "♥" || this.suit === "♣" ? "black" : "red"
+        return this.suit === "♥" || this.suit === "♦" ? "red":"black"
     }
 
     getHTML() {
@@ -37,6 +41,9 @@ class Card {
         cardDiv.classList.add("card", this.color)
         cardDiv.dataset.value = `${this.value} ${this.suit}`
         return cardDiv
+    }
+    getText(){
+        return `${this.value}${this.suit}`
     }
 }
 
