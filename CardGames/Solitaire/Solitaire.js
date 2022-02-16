@@ -45,7 +45,7 @@ function updateDecks() {
             console.log(main_slots_list[index])
             var image = document.createElement("img")
             image.className = "ImageImage";
-            if (main_slots_list[index].cards.length==0){
+            if (main_slots_list[index].cards.length){
                 console.log("a")
                 image.src = `../PNG-cards/${ImgIdValueGetter[CARD_VALUE_MAP[elm.value]]}_of_${ImgIdSuitGetter[elm.suit]}.png`
             }else{

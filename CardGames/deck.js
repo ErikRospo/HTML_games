@@ -26,15 +26,20 @@ class Deck {
         this.cards.push(card)
     }
 }
+
 class Card {
     constructor(suit, value) {
         this.suit = suit;
         this.value = value;
+        this.faceUp=false;
     }
+    
     get color() {
         return this.suit === "♥" || this.suit === "♦" ? "red":"black"
     }
-
+    flip(){
+        this.faceUp=!this.faceUp
+    }
     getHTML() {
         const cardDiv = document.createElement("div")
         cardDiv.innerText = this.suit
@@ -46,7 +51,17 @@ class Card {
         return `${this.value}${this.suit}`
     }
 }
-
+class Slot extends Card{
+    constructor(suit, value){
+    super(suit,value)
+    }
+}
+class Pile {
+    constructor(){
+        this.contents=[Slot]
+        this.contents[0].faceUp=true;
+    }
+}
 function FreshDeck() {
     return SUITS.flatMap(suit => {
         return VALUES.map(value => {
