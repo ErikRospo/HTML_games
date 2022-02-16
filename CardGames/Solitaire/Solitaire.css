@@ -22,7 +22,7 @@ body {
 .stacks>* {
     display: inline-block;
     vertical-align: middle;
-    margin-top:eval(var(--card-height)+10px)
+    margin-top:eval(var(--card-height)+10px);
 }
 
 .deck {
@@ -37,8 +37,16 @@ body {
 .card-slot {
     height: 100%;
     width: 100%;
+    user-select: none;
+    cursor:grab;
 }
-
+.card-slot:active{
+    cursor:grabbed;
+}
+.restart{
+    color:black;
+    cursor:pointer;
+}
 .ImageImage {
     display: inline-block;
     width: 100%;
@@ -46,7 +54,7 @@ body {
     padding: 5px;
     border-radius: 10px;
     margin-top: 10px;
-    position: relative;
+    position: absolute;
 }
 
 .main-slot {
