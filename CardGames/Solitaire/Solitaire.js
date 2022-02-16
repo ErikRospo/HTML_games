@@ -37,6 +37,8 @@ function updateDecks() {
             main_slots[index].removeChild(element);
         }
         var elm = main_slots_list[index].pop()
+        console.log(elm)
+        console.log(main_slots_list[index])
         var image = document.createElement("img")
         image.className = "ImageImage";
         image.src = `../PNG-cards/${ImgIdValueGetter[CARD_VALUE_MAP[elm.value]]}_of_${ImgIdSuitGetter[elm.suit]}.png`

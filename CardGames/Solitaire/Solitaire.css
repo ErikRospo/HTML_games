@@ -1,3 +1,7 @@
+:root{
+    --card-height:2.5em;
+    --card-width:1.55em;
+}
 *,
 *::after,
 *::before {
@@ -11,10 +15,14 @@ body {
     justify-content: center;
     padding-top: 1rem;
 }
+.main{
+    display:inline-block
+}
 
 .stacks>* {
     display: inline-block;
     vertical-align: middle;
+    margin-top:eval(var(--card-height)+10px)
 }
 
 .deck {
@@ -58,13 +66,11 @@ body {
 
 .card {
     position: relative;
-    height: 2.5em;
-    width: 1.5em;
+    height: var(--card-height);
+    width: var(--card-width);
     text-align: left;
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
-    display: flex;
-    flex: 33.33%;
+    display: inline-flex;
+    flex: 50%;
     justify-content: center;
     /* align-items: center; */
     font-size: 4rem;
