@@ -28,6 +28,14 @@
       - [Card Matching](https://www.youtube.com/watch?v=28VfzEiJgy4)
       - [Tic Tac Toe](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
       - [Snake](https://www.youtube.com/watch?v=QTcIXok9wNY)
+      - Sand based game like noita
+      - cellular automata based game
+        - perhaps you move around the CA
+        - perhaps the game updates every time you move
+        - perhaps the game adds/changes a rule every level.
+        - perhaps the game is a puzzle game that is based on CA.
+          - E.G. get a glider to *N* position.
+            - Would need to hop on CA/GOL discord for that.
 - features
   - Different deck types
     - Joker
