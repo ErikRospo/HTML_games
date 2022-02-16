@@ -8,7 +8,7 @@ function startGame() {
     const deck = new Deck();
     deck.shuffle();
     main_slots_list = []
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 7; index++) {
         main_slots_list.push(new Deck("NoDeck"))
     }
     setup(deck);
@@ -36,14 +36,23 @@ function updateDecks() {
             const element = main_slots[index].children[index2];
             main_slots[index].removeChild(element);
         }
-        var elm = main_slots_list[index].pop()
-        console.log(elm)
-        console.log(main_slots_list[index])
-        var image = document.createElement("img")
-        image.className = "ImageImage";
-        image.src = `../PNG-cards/${ImgIdValueGetter[CARD_VALUE_MAP[elm.value]]}_of_${ImgIdSuitGetter[elm.suit]}.png`
-        main_slots[index].appendChild(image)
-
-        // ("data-value",main_slots_list[index].cards[0].getText());
+        var moveDownOffset=0
+        for (let index3=main_slots_list[index].cards.length;index3>0;index3--){
+            moveDownOffset+=20
+            var elm = main_slots_list[index].pop()
+            console.log(elm)
+            console.log(main_slots_list[index])
+            var image = document.createElement("img")
+            image.className = "ImageImage";
+            if (main_slots_list[index].cards.length==1){
+                console.log("a")
+                image.src = `../PNG-cards/${ImgIdValueGetter[CARD_VALUE_MAP[elm.value]]}_of_${ImgIdSuitGetter[elm.suit]}.png`
+            }else{
+                console.log("b")
+                image.src="../PNG-cards/back.png"
+            }
+            image.style=`top:${moveDownOffset}px`
+            main_slots[index].appendChild(image)
+        }
     }
 }
