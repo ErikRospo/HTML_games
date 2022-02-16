@@ -1,0 +1,68 @@
+- games
+  - card games
+    - [Solitare](CardGames/Solitaire/Solitaire.html)
+    - [Blackjack](CardGames/BlackJack/BlackJack.html)
+      - Will be a simplified version
+    - Higher/Lower
+    - Garbage
+      - Flip any card
+      - Flip the Nth card, where N is the cards rank
+        - faces are wildcards
+    - Dice games
+      - Yahtzee
+    - Other
+      - [BattleShip](https://www.youtube.com/watch?v=G6JTM-zt-dQ)
+      - [Text Adventure](https://www.youtube.com/watch?v=R1S_NhKkvGA)
+      - 2d Platformer
+        - [tutorial1](https://www.educative.io/edpresso/how-to-make-a-simple-platformer-using-javascript)
+        - [tutorial2](https://www.youtube.com/watch?v=w-OKdSHRlfA)
+      - 2d rouge like
+      - minicraft (2d minecraft)
+      - flappybird
+      - pong
+      - tetris
+      - match 3 game 
+        - candy crush esque game
+      - 2048
+      - frogger
+      - [Card Matching](https://www.youtube.com/watch?v=28VfzEiJgy4)
+      - [Tic Tac Toe](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
+      - [Snake](https://www.youtube.com/watch?v=QTcIXok9wNY)
+- features
+  - Different deck types
+    - Joker
+    - No Joker
+    - A-10
+    - 2-10
+    - ETC...
+- Visuals
+  - animations
+    - CSS animations for Flipping Over cards.
+    - CSS animations for dealing cards.
+    - CSS animations for rolling die.
+    - CSS animations for sliding 2048 tiles.
+  - Better styling
+  - cleaner elements
+  - Add drop shadows, Borders, and more.
+  - base on a central theme file.
+  - possibly switch to Tailwind for themes.
+- Backend
+  - Have &dev=true url argument
+    - enables developent options.
+  - Have &verbose=true url argument
+    - allows for dumping of console logs.
+  - refactoring of CSS.
+    - remove redundant tags
+    - clean up CSS
+  - refactoring of JS.
+    - Remove unused variables
+    - Clean up classes.
+    - Clean up importing.
+    - Compress to fewer total files.
+  - refactoring of HTML.
+    - remove unnecessary
+- Final 
+  - Add all created games to a central page
+    - Possibly with :hover tags that make it so that on hover, the page shows the game being played.
+    - or just have Iframe elements
+    - Make central page look ***GOOD***

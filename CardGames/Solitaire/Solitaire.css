@@ -7,32 +7,48 @@
 body {
     margin: 0;
     display: flex;
-    grid-template-columns: 7rem 2rem 7rem;
-    grid-template-rows:repeat(2,4rem);
-    /* gap: 0.5rem; */
+    gap: 0.5rem;
     justify-content: center;
     padding-top: 1rem;
+}
+
+.stacks>* {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .deck {
     height: 100%;
     width: 100%;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
     border-radius: 0.5rem;
     color: white;
 }
-.card-slot{
-    height:100%;
-    width:100%;
+
+.card-slot {
+    height: 100%;
+    width: 100%;
 }
-.main-slot{
+
+.ImageImage {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.main-slot {
     height: 7em;
-    width:2em;
+    width: 2em;
+    vertical-align: middle;
+    display: contents;
 }
+
+.main-slot>img {
+    scale: 1;
+}
+
 .text {
     grid-column: span 2;
     display: flex;
@@ -45,9 +61,10 @@ body {
     height: 2.5em;
     width: 1.5em;
     text-align: left;
-    border: 2px solid black;
-    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
     display: flex;
+    flex: 33.33%;
     justify-content: center;
     /* align-items: center; */
     font-size: 4rem;
@@ -67,7 +84,6 @@ body {
     content: attr(data-value);
     font-size: 1rem;
     padding: 0.5rem;
-
 }
 
 .card::before {
